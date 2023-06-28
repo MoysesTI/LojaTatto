@@ -1,0 +1,829 @@
+@import url("https://fonts.cdnfonts.com/css/brightwall");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  color: var(--color-Frase);
+  background-color: #121212;
+}
+/*header/navbar */
+
+.cart--item--qtarea {
+  display: inline-flex;
+  border-radius: 10px;
+  height: 30px;
+  background-color: white;
+  color: black;
+}
+
+.cart--item--qtarea button {
+  border: 0;
+  background-color: transparent;
+  font-size: 18px;
+  outline: 0;
+  cursor: pointer;
+  padding: 0px 10px;
+}
+
+header {
+  background-color: var(--back-Grounds);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: fixed;
+  min-width: 100%;
+  top: 0;
+  z-index: 1020;
+}
+.erro-Input {
+  color: var(--hover-Color);
+  font-size: 0.7rem;
+  font-family: "Poppins", sans-serif;
+}
+
+#navegetion a {
+  margin: 0 1rem;
+  font-size: 1rem;
+  padding: 10px;
+  color: var(--color-Frase);
+  text-decoration: none;
+}
+
+header .typeLogo {
+  fill: var(--color-Frase);
+}
+
+#navegetion a:hover {
+  margin: 0 1rem;
+  border-bottom: var(--boderVisu);
+  color: var(--hover-Color);
+}
+.icons {
+  display: flex;
+  align-items: center;
+}
+#menuBtn {
+  display: none;
+}
+.icons svg {
+  color: var(--color-Frase);
+  cursor: pointer;
+  margin-left: 2rem;
+  width: 25px;
+  height: 25px;
+}
+.icons svg:hover {
+  color: var(--hover-Color);
+}
+
+.menuOffOn {
+  display: none;
+  color: rgb(255, 255, 255);
+}
+
+.typeLogo {
+  width: 120px;
+  height: 120px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.menu-shopping {
+  padding: 5px 20px;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  display: flex;
+}
+
+.menu-shopping span {
+  margin-right: 10px;
+  color: var(--color-Frase);
+}
+.menu-shopping span:hover {
+  color: var(--hover-Color);
+}
+
+/* cadastro */
+.closeX {
+  cursor: pointer;
+  fill: var(--color-Frase);
+}
+#containerfhoter {
+  padding-top: 2rem;
+  background-color: var(--back-Grounds);
+  background-size: cover;
+  width: 100%;
+  height: 700px;
+  color: var(--color-Frase);
+}
+.input-Cadastro,
+.label-Cadastro {
+  display: block;
+  outline: none;
+  width: 100%;
+}
+.disabled {
+  opacity: 0;
+}
+.Login-Cadastro {
+  cursor: pointer;
+}
+/* Estrutura do form Login/cadastro */
+#main-container {
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--back-Grounds);
+  border-radius: 10px;
+  padding: 25px;
+  border: var(--boderVisu);
+  height: auto;
+}
+.checkbox-Button-Submit {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+  width: 100%;
+  height: 50px;
+}
+
+.form-Cadastro {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.full-box {
+  flex: 1 1 100%;
+  position: relative;
+}
+
+.half-box {
+  flex: 1 1 45%;
+  position: relative;
+}
+
+.spacing {
+  margin-right: 2.5%;
+}
+
+.label-Cadastro {
+  font-weight: bold;
+  font-size: 0.8rem;
+  padding-top: 40px;
+}
+
+.input-Cadastro {
+  border: none;
+  border-bottom: 2px solid;
+  border-color: var(--color-Frase);
+  background-color: var(--back-Grounds);
+  padding: 10px;
+  font-size: 0.9rem;
+  color: #fefffe;
+  padding-top: 10px;
+}
+
+/* Login*/
+#containerfhoter-Login {
+  padding-top: 5vh;
+  background-color: var(--back-Grounds);
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+  color: var(--color-Frase);
+}
+
+/* bannerTela principal */
+
+.bannerImg {
+  min-width: 100%;
+  height: 1000px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  margin-top: 8%;
+}
+
+/* container full sobre mim*/
+
+.cointainerboxme {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--back-Grounds);
+  width: 100%;
+  height: 100vh;
+}
+.containerSobreMim {
+  width: 900px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #dbe1dc;
+  border-radius: 5px;
+  border: var(--boderVisu);
+  box-shadow: var(--boxShadows);
+}
+.introductionMe {
+  width: 360px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  height: 500px;
+}
+
+.introductionMe h1 {
+  font-size: 1.7rem;
+  font-family: "Brightwall", sans-serif;
+  text-decoration: underline 2px;
+  text-decoration-color: var(--back-Grounds);
+}
+.introductionMe p {
+  font-size: 0.9;
+  font-family: "DM Sans", sans-serif;
+}
+.redeSocialboxme {
+  display: inline-flex;
+  gap: 100px;
+}
+.myIMG {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  padding-left: 20px;
+}
+
+.introductionMe svg:hover {
+  fill: var(--hover-Color);
+  cursor: pointer;
+}
+
+/* Product Sell */
+
+.product {
+  background-color: var(--back-Grounds);
+  padding-bottom: 50px;
+  color: var(--color-Frase);
+  width: auto;
+  height: 100%;
+}
+
+.outMenu {
+  padding-top: 100px;
+  text-align: center;
+  color: var(--color-Frase);
+  text-transform: uppercase;
+  font-family: "Brightwall", sans-serif;
+}
+.outMenu span {
+  color: var(--hover-Color);
+  text-transform: uppercase;
+}
+
+.tatto-item--add {
+  width: 5rem;
+  height: 1.5rem;
+  border-radius: 4px;
+  border: var(--boderVisu);
+  background-color: var(--back-Grounds);
+  color: var(--color-Frase);
+  font-size: 25px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.tatto-item--add:hover {
+  background-color: var(--color-Frase);
+  color: var(--back-Grounds);
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+  row-gap: 30px;
+  padding: 5rem 3rem;
+  gap: 30px;
+}
+.gridCarrinho {
+  display: grid;
+  grid-template-columns: repeat(2, 0.3fr);
+  row-gap: 30px;
+  gap: 30px;
+  padding: 5rem 3rem;
+}
+
+.valuetion {
+  display: inline-flex;
+  gap: 20px;
+  font-size: 17px;
+}
+.box p {
+  font-size: 15px;
+}
+.valuetion span {
+  text-decoration: line-through;
+}
+.box {
+  width: 100%;
+  border: var(--boderVisu);
+  text-align: center;
+}
+.svgs {
+  display: flex;
+  gap: 35px;
+}
+.svgs svg:hover {
+  fill: var(--hover-Color);
+  cursor: pointer;
+}
+
+.box img {
+  width: 300px;
+  height: 250px;
+  border-radius: 50%;
+}
+.box .price span {
+  text-decoration: line-through;
+  font-weight: lighter;
+}
+.box:hover {
+  background: var(--color-Frase);
+  color: var(--back-Grounds);
+}
+
+.valorProduct {
+  font-size: 1.3rem;
+}
+
+.valorProduct span {
+  text-decoration: line-through;
+  font-size: 0.8rem;
+}
+
+/*FORMULARIO DE CONTATO/MAP */
+
+.contact {
+  row-gap: 20px;
+  flex-direction: column;
+  background-color: var(--back-Grounds);
+  color: var(--color-Frase);
+  width: auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact h1 {
+  padding-bottom: 2rem;
+}
+
+.map {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.formsEdress {
+  height: 25rem;
+  display: inline-flex;
+  margin: 0 10%;
+  border: var(--boderVisu);
+  background: #121212;
+  margin-bottom: 10rem;
+  box-shadow: var(--boxShadows);
+}
+
+.formContact {
+  flex: 1 1 50rem;
+  padding: 5rem 2rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 2rem;
+}
+
+.formContact h3 {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  padding-top: 30px;
+  color: white;
+}
+
+.inputBox span {
+  fill: white;
+  font-size: 2rem;
+  padding-left: 2rem;
+}
+.inputSvg {
+  fill: white;
+}
+.inputBox {
+  display: flex;
+}
+
+.inputContact {
+  width: 80%;
+  padding: 0.6rem;
+  font-size: 1.3rem;
+  color: white;
+  text-transform: none;
+  background: none;
+  border: var(--boderVisu);
+}
+
+.inputBox span {
+  color: white;
+  font-size: 2rem;
+  padding-right: 1rem;
+}
+
+/* banner phone */
+.bannerImg {
+  /* background-image: url(../Tattoo/banner/Technology\\(4\).png); */
+  background-size: cover;
+  width: 100%;
+  height: 400px;
+}
+
+/* Button geral site */
+
+.btns {
+  width: 8rem;
+  height: 1.5rem;
+  border-radius: 0.3rem;
+  font-size: 1rem;
+  background-color: var(--color-Frase);
+  font-family: Arial, sans-serif;
+  border: var(--boder-visu);
+  color: var(--back-Grounds);
+  text-decoration: none;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.btns:hover {
+  color: var(--color-Frase);
+  background-color: var(--back-Grounds);
+  border: 0.1rem solid rgba(255, 255, 255, 0.514);
+}
+
+/*MEUS TRABALHOS SETOR */
+
+.myJobs {
+  background-color: var(--back-Grounds);
+  width: auto;
+  height: 100%;
+  color: var(--color-Frase);
+}
+.myJobs h1 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.myJobs img {
+  width: 300px;
+  height: 300px;
+}
+
+.carousel-inner {
+  border: var(--boderVisu);
+}
+.boxCarousel {
+  width: 375px;
+  height: 375px;
+}
+.containerBoxCarousel {
+  flex-wrap: wrap;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  row-gap: 30px;
+  padding: 5rem 3rem;
+}
+.boxCarousel {
+  width: 300px;
+  height: 300px;
+}
+.cart--finalizar {
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: var(--back-Grounds);
+  color: var(--color-Frase);
+  cursor: pointer;
+  text-align: center;
+  border: var(--boderVisu);
+  transition: all ease 0.2s;
+  margin-bottom: 20px;
+}
+
+.cart--finalizar:hover {
+  background: var(--color-Frase);
+  color: var(--back-Grounds);
+}
+
+/* END FOOTER */
+
+.footer {
+  flex-direction: column;
+  background-color: var(--back-Grounds);
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-top: var(--boderVisu);
+}
+
+.social a {
+  width: 50px;
+  height: 50px;
+  padding: 1rem;
+  color: var(--color-Frase);
+}
+
+.social a:hover {
+  color: var(--hover-Color);
+}
+.list {
+  display: flex;
+  gap: 40px;
+  padding-top: 20px;
+}
+
+.list p a {
+  color: var(--color-Frase);
+  text-decoration: none;
+}
+
+.list p a:hover {
+  color: var(--hover-Color);
+  text-decoration: underline var(--color-Frase);
+}
+.footer p {
+  color: var(--color-Frase);
+  font-size: 0.7rem;
+}
+
+/*class interação para Navbar e sistema de cadastro e login*/
+.menuOffOn {
+  display: inline-block;
+}
+.off_End_Onn {
+  display: none;
+}
+
+.tattoWindowArea {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.257);
+  display: none;
+  transition: all ease 0.5s;
+  justify-content: center;
+  align-items: center;
+  z-index: 1050;
+}
+
+.tattoWindowBody {
+  width: 40rem;
+  background-color: var(--back-Grounds);
+  border-radius: 6px;
+  border: var(--boderVisu);
+  display: flex;
+  margin: 20px 0px;
+  align-items: center;
+  justify-content: center;
+}
+
+.tattoBig {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tattoBig--back {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: var(--back-Grounds);
+}
+
+.tattoBig img {
+  height: 250px;
+  width: auto;
+}
+
+.tattoInfo {
+  flex: 3;
+  font-family: "Hepta Slab", Helvetica, Arial;
+  padding-bottom: 50px;
+}
+
+.tattoInfo h1 {
+  margin-top: 50px;
+  color: var(--color-Frase);
+}
+
+.tattoInfo .tattoInfo--desc {
+  font-size: 20px;
+  color: var(--color-Frase);
+  margin-top: 10px;
+  font-family: "Lato", Helvetica, Arial;
+}
+
+.tattoInfo--sector {
+  color: var(--color-Frase);
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.tattoInfo--sizes {
+  display: inline-flex;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.tattoInfo--size {
+  padding: 10px 15px;
+  color: var(--color-Frase);
+  background-color: var(--back-Grounds);
+  font-size: 13px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.tattoInfo--size:hover {
+  background-color: var(--back-Grounds);
+}
+
+.tattoInfo--size.selected {
+  background-color: var(--hover-Color);
+  color: #fff;
+}
+
+.tattoInfo--size.selected span {
+  color: var(--color-Frase);
+}
+
+.tattoInfo--size span {
+  font-size: 12px;
+  color: var(--color-Frase);
+  font-weight: normal;
+}
+
+.tattoInfo--price {
+  display: flex;
+  align-items: center;
+}
+
+.tattoInfo--actualPrice {
+  font-size: 28px;
+  margin-right: 30px;
+  color: var(--color-Frase);
+}
+
+.tattoInfo--qtarea {
+  display: inline-flex;
+  background-color: var(--back-Grounds);
+  border: var(--boderVisu);
+  border-radius: 10px;
+  height: 30px;
+}
+
+.tattoInfo--qtarea button {
+  border: 0;
+  background-color: transparent;
+  font-size: 17px;
+  outline: 0;
+  cursor: pointer;
+  padding: 0px 10px;
+  color: var(--color-Frase);
+}
+
+.tattoInfo--qt {
+  line-height: 30px;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 0px 5px;
+  color: var(--color-Frase);
+}
+
+.tattoInfo--addButton {
+  margin-top: 30px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: var(--color-Frase);
+  color: var(--back-Grounds);
+  display: inline-block;
+  cursor: pointer;
+  margin-right: 20px;
+  border: var(--boderVisu);
+}
+
+.tattoInfo--addButton:hover {
+  background-color: var(--hover-Color);
+}
+
+.tattoInfo--cancelButton {
+  display: inline-block;
+  cursor: pointer;
+  color: var(--color-Frase);
+}
+
+.tattoInfo--cancelMobileButton {
+  display: none;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  margin-bottom: 30px;
+}
+
+/* Carrinho Aside */
+.menu-closer {
+  width: 32px;
+  height: 32px;
+  font-size: 30px;
+  cursor: pointer;
+}
+aside {
+  display: none;
+  width: 0vw;
+  height: 80%;
+  font-family: "Hepta Slab", Helvetica, Arial;
+  transition: all ease 3s;
+  overflow-x: hidden;
+  background-color: var(--back-Grounds);
+}
+
+aside.show {
+  width: 30vw;
+  display: flex;
+  border: var(--boderVisu);
+}
+.cart--area {
+  margin-top: 30px; /* ajuste */
+  padding: 20px;
+  color: var(--color-Frase);
+}
+
+.cart--area h1 {
+  display: flex;
+  justify-content: center;
+}
+
+.cart--totalitem {
+  padding: 15px 0;
+  border-top: 1px solid #d32f2f;
+  color: #315970;
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+}
+
+.cart--totalitem span:first-child {
+  font-weight: bold;
+}
+.result {
+  padding-right: 20px;
+}
+aside {
+  z-index: 1050;
+  width: 0vw;
+  position: fixed;
+  right: 0;
+  top: 80px;
+  bottom: 0;
+  transition: all ease 0.2s;
+}
+.cart {
+  margin-bottom: 20px;
+}
+
+.cart--item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  text-align: center;
+}
+
+.cart--item img {
+  width: 100px;
+  height: 100px;
+}

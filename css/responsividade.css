@@ -1,0 +1,348 @@
+@media (min-width: 1560px) {
+  .typeLogo {
+    width: 150px;
+    height: 120px;
+    padding: 15px;
+  }
+  .bannerImg {
+    margin-top: 120px;
+    width: 100%;
+    height: 750px;
+  }
+  #navegetion a {
+    font-size: 1.2rem;
+  }
+  .icons svg {
+    width: 25px;
+    height: 25px;
+  }
+  .menu-shopping {
+    display: flex;
+    font-size: 25px;
+  }
+  .box {
+    width: 600px;
+    height: 800px;
+  }
+  .box img {
+    width: 90%;
+    height: 600px;
+    border-radius: 10%;
+  }
+  .box .shopping {
+    width: 9rem;
+    height: 2.5rem;
+    font-size: 2.5rem;
+  }
+  .box p {
+    font-size: 2rem;
+  }
+  .box .valuetion {
+    font-size: 0rem;
+  }
+  .box h3 {
+    font-size: 2.5rem;
+  }
+  .containerSobreMim {
+    width: 1500px;
+    height: 600px;
+  }
+  #introductionMe {
+    width: 600px;
+    height: 300px;
+  }
+  #introductionMe p {
+    font-size: 1.7rem;
+  }
+  #introductionMe h1 {
+    font-size: 3rem;
+  }
+
+  .box {
+    width: auto;
+  }
+  .formsEdress {
+    width: 1500px;
+    height: 500px;
+  }
+  .map {
+    width: 750px;
+    height: 100%;
+  }
+  .formContact {
+    flex: 1 1 100rem;
+  }
+  .formContact h3 {
+    font-size: 3rem;
+  }
+  .inputContact {
+    width: 500px;
+    padding: 0.6rem;
+    font-size: 2.1rem;
+  }
+  .inputSvg {
+    width: 50px;
+    height: 50px;
+  }
+  i {
+    font-size: 1.8rem;
+  }
+  .btn-contact {
+    width: 15rem;
+    font-size: 1.8rem;
+    height: 3rem;
+  }
+  .boxCarousel {
+    width: 700px;
+    height: 700px;
+  }
+  .myJobs img {
+    height: 700px;
+  }
+  .outMenu {
+    font-size: 4rem;
+  }
+  .list p a {
+    font-size: 1.9rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .bannerImg {
+    margin-top: 9%;
+  }
+  .containerSobreMim {
+    width: 50rem;
+  }
+  .navBar {
+    position: fixed;
+    top: 12%;
+    right: 0%;
+    background: var(--back-Grounds);
+    height: calc(100vh - 25.5rem);
+    border-top: none;
+    transition: 1s;
+    margin-right: 0%;
+  }
+  .menu-closer {
+    display: block;
+  }
+
+  .navBar a {
+    color: var(--color-Frase);
+    font-size: 1.3rem;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+  }
+  .menuOffOn {
+    display: inline-block;
+  }
+  .off_End_Onn {
+    display: none;
+  }
+  #menuBtn {
+    display: flex;
+  }
+  .bannerImg {
+    /* background-image: url(../Tattoo/banner/Technology\\(4\)); */
+    background-size: cover;
+    min-width: 100%;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .gridContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    row-gap: 30px;
+    padding: 5rem 3rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .tattoWindowBody {
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .modal-img {
+    width: 100px;
+    height: 100px;
+  }
+  aside {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transition: all ease 0.2s;
+  }
+  aside.show {
+    width: 100%;
+  }
+  .cart--area {
+    width: 100vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .formsEdress {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  .cointainerboxme {
+    height: 800px;
+    padding-top: 20px;
+  }
+  .containerSobreMim {
+    width: 90%;
+    height: 100%;
+    padding: 0 10%;
+  }
+  .introductionMe h1 {
+    font-size: 1.6rem;
+  }
+  .introductionMe p {
+    font-size: 1rem;
+  }
+  .introductionMe {
+    width: 320px;
+    height: 400px;
+  }
+  .myIMG {
+    width: auto;
+    height: 250px;
+    border-radius: 50%;
+  }
+
+  .gridContainer {
+    display: grid;
+    grid-template-columns: repeat(1, 2fr);
+    row-gap: 30px;
+    place-items: center;
+    width: 100%;
+  }
+  .gridContainer .box {
+    width: 90%;
+  }
+}
+@media (max-width: 650px) {
+  .bannerImg {
+    /* background-image: url(../Tattoo/banner/Technology\\(4\).png); */
+  }
+  .containerSobreMim {
+    /* padding-top: 20px;
+            padding: 0 10%; */
+    flex-direction: column;
+  }
+  #main-container {
+    width: 90%;
+    height: 100%;
+  }
+  #containerfhoter {
+    height: 1000px;
+  }
+  .half-box {
+    flex: 1 1 100%;
+    position: relative;
+  }
+}
+
+@media (max-width: 425px) {
+  .icons svg {
+    display: flex;
+    width: 20px;
+  }
+  .menu-shopping {
+    font-size: 20px;
+    display: flex;
+    padding-right: 1rem;
+  }
+  .typeLogo {
+    width: 100px;
+    height: 80px;
+  }
+  .formsEdress {
+    width: 22rem;
+  }
+  .bannerImg {
+    margin-top: 15%;
+  }
+  .btns {
+    width: 7.5rem;
+    height: 1.5rem;
+  }
+  .formsEdress h3 {
+    font-size: 1.5rem;
+  }
+
+  .inputBox span .inputSvg {
+    width: 30px;
+    height: 30px;
+    align-items: center;
+    display: flex;
+    fill: var(--color-Frase);
+  }
+
+  .containerSobreMim {
+    width: 90%;
+    height: 100%;
+    flex-direction: column;
+  }
+
+  .footer ul {
+    gap: 10px;
+    font-size: 0.9rem;
+    width: auto;
+  }
+  .outMenu {
+    font-size: 1.1rem;
+  }
+  .containerSobreMim .introductionMe p {
+    font-size: 0.8rem;
+    width: 15rem;
+  }
+  .box img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 320px) {
+  .bannerImg {
+    margin-top: 0px;
+  }
+  .containerSobreMim {
+    max-width: 90%;
+  }
+  .containerSobreMim .sobre {
+    font-size: 50px;
+  }
+  .formsEdress {
+    width: 19rem;
+    height: 100vh;
+  }
+  .map {
+    width: 19rem;
+    height: 20rem;
+  }
+  .icons svg {
+    margin-left: 1rem;
+  }
+  .gridContainer .box img {
+    width: 190px;
+  }
+  .formsEdress {
+    height: auto;
+  }
+}

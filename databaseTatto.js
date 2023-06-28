@@ -1,0 +1,58 @@
+let tattoJson = [
+  {
+    id: 1,
+    name: "Dragon",
+    img: "./Tatto mid/grid_0 (1).png",
+    price: 205,
+    description: "Tattoo up to 35 cm",
+  },
+  {
+    id: 2,
+    name: "Game of Thrones",
+    img: "./Tatto mid/grid_0 (2).png",
+    price: 153,
+    description: "Tattoo up to 15 cm",
+  },
+  {
+    id: 3,
+    name: "Realistic Tattoo",
+    img: "./Tatto mid/grid_0 (3).png",
+    price: 205,
+    description: "Tattoo up to 30 cm",
+  },
+  {
+    id: 4,
+    name: "Coffee",
+    img: "./Tatto mid/grid_0 (4).png",
+    price: 205,
+    description: "Tattoo up to 10 cm",
+  },
+  {
+    id: 5,
+    name: "Female Tatto",
+    img: "./Tatto mid/grid_0 (5).png",
+    price: 205,
+    description: "Tattoo up to 11 cm",
+  },
+  {
+    id: 6,
+    name: "Zenitsu Agatsuma",
+    img: "./Tatto mid/grid_0 (6).png",
+    price: 205,
+    description: "Tattoo up to 21 cm",
+  },
+  {
+    id: 7,
+    name: "Detailed Wolf",
+    img: "./Tatto mid/grid_0 (7).png",
+    price: 205,
+    description: "Tattoo up to 18 cm",
+  },
+  {
+    id: 8,
+    name: "Anime drawing",
+    img: "./Tatto mid/grid_0 (8).png",
+    price: 205,
+    description: "Tattoo up to 16 cm",
+  },
+];

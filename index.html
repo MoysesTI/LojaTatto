@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css"> 
+    <link rel="stylesheet" href="./profileUser/profile.html">
+    <link rel="stylesheet" href="./css/loading.css">
+    <link rel="stylesheet" href="./css/variebos.css">
+    <link rel="stylesheet" href="./css/responsividade.css">
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <title>Klyon Tatto</title>  
+</head>
+            <body data-theme="dark">
+                <!-- navegação da pagina -->
+                <div class="models" style="display: none;">
+                    <div class="tatto-item box" data-key="">
+                        <a>
+                            <div class="tatto-item-img"><img src=""></div>
+                        </a>
+                        <h3 class="tatto-item-name">--</h3>
+                                <div class="valuetion">
+                                    <div class="tatto-item-price">R$ -- 
+                                    </div>
+                                    <span>200.30</span>
+                                </div>
+                            <p class="tatto-item-desc">--</p>
+                        <div>
+                            <button class=" shopping tatto-item--add">+</button>
+                        </div>
+                    </div>
+                
+                    <div class="cart--item">
+                        <img src="" />
+                        <div class="cart--item-nome">--</div>
+                        <div class="cart--item--qtarea">
+                                <button class="cart--item-qtmenos">-</button>
+                                <div class="cart--item--qt">1</div>
+                                <button class="cart--item-qtmais">+</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <header>
+                    <a>
+                        <img src="./Tattoo/Logo/Design sem nome (27).png" class="typeLogo" alt="">
+                    <nav id="navegetion" class="navBar">
+                            <a  href="index.html">Home</a>
+                            <a  href="#introductionMe">About Me</a>
+                            <a  href="#product">Tatto</a>
+                            <a  id="cadastro" class="Login-Cadastro">Register</a>
+                    </nav>
+                    <div class="icons">
+                            <svg   xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-moon-stars-fill" id="login" class="Login-Cadastro profile-Person" viewBox="0 0 16 16">
+                                <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"/>
+                            </svg>
+                            <svg type="button" id="colorBtn"  xmlns="http://www.w3.org//svg" href="#containerfhoter-Login"  fill="currentColor"    viewBox="0 0 16 16" title="Modo Dark e White">
+                                <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
+                                <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"/>
+                            </svg> 
+                            <svg id="menuBtn" onclick=menu() xmlns="http://www.w3.org//svg"   fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                            </svg>
+                            <div  class="menu-shopping"><span>0</span>🛒</div>
+                    </div>
+                </header>
+                <!-- Banner da pagina  -->
+                <img class="bannerImg" id="img-banner"  src="/testes/Tattoo/banner/4533942.png" alt="">
+                <!-- cadastro -->
+                    <div id="containerfhoter" class="off_End_Onn ">
+                        <div id="main-container">
+                                <svg xmlns="http://www.w3.org/2000/svg" onclick="closexfrom()"  width="30" height="30" fill="currentColor" class="bi bi-x closeX" style="cursor: pointer;" viewBox="0 0 16 16">
+                                    <path   d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                                </svg>
+                                <h1>Register</h1>
+                            <form id="register-form" action="" class="form-Cadastro">
+                                <div class="full-box">
+                                    <label class="label-Cadastro"  for="email">E-mail</label>
+                                    <input class="input-Cadastro"  type="email" name="email" id="email-register" placeholder="Digite seu e-mail"  data-required data-email-validate>
+                                </div>
+                                <p class="error-validation template erro-Input"></p>
+                                <div class="half-box spacing">
+                                    <label class="label-Cadastro" for="name">Name</label>
+                                    <input class="input-Cadastro" type="text" name="name" id="name-register" placeholder="Digite seu nome" data-required data-min-length="3" data-max-length="16" >
+                                </div>
+                                <div class="half-box">
+                                    <label class="label-Cadastro" for="lastname">Surname</label>
+                                    <input class="input-Cadastro" type="text" name="lastname" id="secondName-register" placeholder="Digite seu sobrenome" data-required data-only-letters >
+                                </div>
+                                <div class="half-box spacing">
+                                    <label class="label-Cadastro"  for="password">Password</label>
+                                    <input class="input-Cadastro"  type="password" name="password" id="password-register" placeholder="Digite sua senha" data-password-validate data-required > 
+                                </div>
+                                <div class="half-box">
+                                    <label class="label-Cadastro" for="passconfirmation">
+                                        Password Confirmation</label>
+                                    <input class="input-Cadastro" type="password" name="passconfirmation" id="passwordconfirmation" placeholder="Digite novamente sua senha" data-equal="password" >
+                                </div>
+                                <div class="half-box">
+                                    <label class="label-Cadastro" for="data">Date of birth
+                                    </label>
+                                    <input  class="input-Cadastro" type="date" name="dataniver" id="data-profile"  >
+                                </div>
+                                <div class="half-box">
+                                    <label class="label-Cadastro" for="telphone">Telephone</label>
+                                    <input class="input-Cadastro" type="tel" name="telphone" id="phoneNumber-profile" placeholder="Digite seu numero de telefone">
+                                </div>
+                                
+                                <div class=" half-box checkbox-Button-Submit"> 
+                                    <div>
+                                        <input type="radio" name="agreement" id="agreement" data-required >
+                                        <label for="agreement" id="agreement-label">
+                                            I have read and accept the <a href="#">
+                                                terms of use</a></label >
+                                    </div>
+                                    <div>
+                                        <button  type="button" id="btn-submit" class="btns"   value="Registrar">Cadastre-se</button>
+                                    </div>
+                                </div> 
+                            </form>
+                        </div>
+                        <p class="error-validation template erro-Input"></p>
+                    </div>
+
+                <!-- Login -->
+                <div id="containerfhoter-Login"  class="off_End_Onn " >
+                    <div id="main-container">
+                        <svg xmlns="http://www.w3.org/2000/svg" onclick="closexfrom()"  width="30" height="30" fill="currentColor" class="bi bi-x closeX" style="cursor: pointer;" viewBox="0 0 16 16">
+                            <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                        </svg>
+                        <h1>Login</h1>
+                        <form id="register-form-login" action="" class="form-Cadastro" style=" justify-content: center;">
+                        <div class="full-box">
+                            <label class="label-Cadastro" for="email">E-mail</label>
+                            <input class="input-Cadastro" type="email" name="email" id="email-login" placeholder="Digite seu e-mail" data-min-length="3" data-email-validate>
+                        </div>
+                        <div class="full-box">
+                            <label class="label-Cadastro" for="name">Password</label>
+                            <input class="input-Cadastro" type="password" name="password" id="password-login" placeholder="Digite seu senha" data-password-validate data-required>
+                        </div>
+                        <div class="half-box checkbox-Button-Submit">
+                            <button type="button" onclick="logoutLoginUser()"  class="btns" value="login">Login</button>
+                            <button type="button" id="recover-password" onclick="recoverPassword()" class="btns" value="recover">Recuperar senha</button>
+                        </div>
+                        </form>
+                    </div>
+                    <p class="error-validation template erro-Input"></p>
+                </div>
+
+                <!-- minhas informações -->
+                <section class="cointainerboxme">
+                    <section class="containerSobreMim">
+                            <div class="introductionMe" id="introductionMe">
+                                <h1 class="sobre">About me </h1><br>
+                                <p>Tattoo artist specializing in anime, currently working in Vitoria, capital. Graduated in Economics, after 8 years working in the financial market, I decided that my life would not be behind a PC and Excel. As I've always been drawing my whole life, the beginning was buying the materials and learning to tattoo myself, and the rest is history....</p>
+                                <div class="redeSocialboxme">
+                                    <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                                            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                                            <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.258-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.254.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        <div >
+                            <!-- <div class="myIMG"> -->
+                                <img class="myIMG" src="./Tattoo/you/moysesmv_realist_8k_programmer_ae8e6786-dbe4-440f-b512-be15486a7e05.png" alt="" height="">
+                            </div>
+                        </div>
+                    </section>
+                </section>
+
+            <!-- Venda de produtos -->
+            <main class="product">
+                <h1 class="outMenu">Minhas<span>  Artes</span></h1>
+                <div class="tatto-area gridContainer"></div>
+            </main>
+            <aside>
+                <div class="menu-closer">❌</div>
+                <div class="cart--area">
+                    <h1>Seu carrinho</h1>
+                    <div class="cart"></div>
+                    <div class="cart--details">
+                        <div class="cart--totalitem subtotal">
+                            <span>Subtotal</span>
+                            <span class="result">R$ --</span>
+                        </div>
+                        <div class="cart--totalitem desconto">
+                            <span>Desconto</span>
+                            <span class="result">R$ --</span>
+                        </div>
+                        <div class="cart--totalitem totalbig">
+                            <span>Total</span>
+                            <span class="result">R$ --</span>
+                        </div>
+                        <div class="cart--finalizar">Finalizar a compra</div>
+                    </div>
+                </div>
+            </aside>
+
+
+            <!-- janela modal -->
+            <div class="tattoWindowArea">
+                <div class="tattoWindowBody">
+                    <div class="tattoInfo--cancelMobileButton">Back</div>
+                    <div class="tattoBig">
+                        <img class="modal-img" src="" />
+                    </div>
+                    <div class="tattoInfo">
+                        <h1 >--</h1>
+                        <div class="tattoInfo--desc">--</div>
+                        <div class="tattoInfo--sizearea">
+                        </div>
+                        <div class="tattoInfo--pricearea">
+                            <div class="tattoInfo--sector">Price</div>
+                            <div class="tattoInfo--price">
+                                <div class="tattoInfo--actualPrice"></div>
+                                <div class="tattoInfo--qtarea">
+                                    <button class="tattoInfo--qtmenos">-</button>
+                                    <div class="tattoInfo--qt">1</div>
+                                    <button class="tattoInfo--qtmais">+</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tattoInfo--addButton">Add to Cart</div>
+                        <div class="tattoInfo--cancelButton">Cancel</div>
+                    </div>
+                </div>
+            </div>
+
+
+            <section class="contact">
+                    <h1 class="outMenu"> <span>contact</span> us </h1>
+                        <div class="formsEdress">
+                            <div class="map-location" >  
+                                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3743.2942177922123!2d-40.27161798529084!3d-20.246629153461207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xb817655b669e13%3A0x19f6323191009e6b!2sTattoo%20Vix!5e0!3m2!1sen!2sbr!4v1671419139650!5m2!1sen!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                <div>
+                                    <i class="bi bi-geo-alt"> Endereço: Av. Paulo Gracindo, 15 – Morada da Colina, Uberlândia – MG, 38411-145</i>
+                                </div>
+                            </div>
+                            <form action="" class="formContact">
+                                <h3>Contact</h3>
+                                    <div class="inputBox">
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-person-circle inputSvg" viewBox="0 0 16 16">
+                                                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                                                <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                                            </svg>
+                                        </span>
+                                        <input type="text" placeholder="name" class="inputContact">
+                                    </div>
+                                    <div class="inputBox">
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"  fill="currentColor" class="bi bi-envelope-at-fill inputSvg" viewBox="0 0 16 16">
+                                                <path d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2H2Zm-2 9.8V4.698l5.803 3.546L0 11.801Zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586l-1.239-.757ZM16 9.671V4.697l-5.803 3.546.338.208A4.482 4.482 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671Z"/>
+                                                <path d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034v.21Zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791Z"/>
+                                            </svg>
+                                        </span>
+                                        <input type="email" placeholder="email" class="inputContact">
+                                    </div>
+                                    <div class="inputBox">
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-phone-vibrate inputSvg" viewBox="0 0 16 16">
+                                            <path d="M10 3a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h4zM6 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H6z"/>
+                                            <path d="M8 12a1 1 0 1 0 0-2 1 1 0 0 0 0 2zM1.599 4.058a.5.5 0 0 1 .208.676A6.967 6.967 0 0 0 1 8c0 1.18.292 2.292.807 3.266a.5.5 0 0 1-.884.468A7.968 7.968 0 0 1 0 8c0-1.347.334-2.619.923-3.734a.5.5 0 0 1 .676-.208zm12.802 0a.5.5 0 0 1 .676.208A7.967 7.967 0 0 1 16 8a7.967 7.967 0 0 1-.923 3.734.5.5 0 0 1-.884-.468A6.967 6.967 0 0 0 15 8c0-1.18-.292-2.292-.807-3.266a.5.5 0 0 1 .208-.676zM3.057 5.534a.5.5 0 0 1 .284.648A4.986 4.986 0 0 0 3 8c0 .642.12 1.255.34 1.818a.5.5 0 1 1-.93.364A5.986 5.986 0 0 1 2 8c0-.769.145-1.505.41-2.182a.5.5 0 0 1 .647-.284zm9.886 0a.5.5 0 0 1 .648.284C13.855 6.495 14 7.231 14 8c0 .769-.145 1.505-.41 2.182a.5.5 0 0 1-.93-.364C12.88 9.255 13 8.642 13 8c0-.642-.12-1.255-.34-1.818a.5.5 0 0 1 .283-.648z"/>
+                                            </svg>
+                                        </span>
+                                        <input type="number" placeholder="number" class="inputContact">
+                                    </div>
+                                <button type="submit" class="btns btn-contact" data-mdb-ripple-color="Dark">To send</button>
+                            </form>
+                        </div>
+            </section>
+
+            <!-- Meus trabalhos -->
+            <section class="myJobs">
+                <h1 class="outMenu">My<span> works
+                </span></h1>
+                    <div class="containerBoxCarousel">
+                        <div class="boxCarousel">
+                            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                <div class="carousel-item active" data-bs-interval="5000">
+                                    <img src="./Tatto mid/grid_0 (9).png" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item" data-bs-interval="5000">
+                                    <img src="./Tatto mid/grid_0 (10).png" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item" data-bs-interval="5000">
+                                    <img src="./Tatto mid/grid_0 (11).png" class="d-block w-100" alt="...">
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="boxCarousel">
+                            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                <div class="carousel-item active" data-bs-interval="5000">
+                                    <img src="./Tatto mid/grid_0 (12).png" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item" data-bs-interval="5000">
+                                    <img src="./Tatto mid/grid_0 (13).png" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item" data-bs-interval="5000">
+                                    <img src="./Tatto mid/grid_0 (14).png"  class="d-block w-100" alt="...">
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="boxCarousel">
+                            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                <div class="carousel-item active" data-bs-interval="5000">
+                                    <img src="./Tatto mid/grid_0 (15).png" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item" data-bs-interval="5000">
+                                    <img src="./Tatto mid/grid_0 (24).png" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item" data-bs-interval="5000">
+                                    <img src="./Tatto mid/Threshas_dragon_drawing_db44c084-a043-494a-9312-b7b6d5a719e6.png" class="d-block w-100" alt="...">
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="boxCarousel">
+                            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                <div class="carousel-item active" data-bs-interval="5000">
+                                    <img src="./Tatto mid/grid_0 (26).png" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item" data-bs-interval="5000">
+                                    <img src="./Tatto mid/grid_0 (16).png" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item" data-bs-interval="5000">
+                                    <img src="./Tatto mid/grid_0 (25).png "class="d-block w-100" alt="...">
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="boxCarousel">
+                            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                <div class="carousel-item active" data-bs-interval="5000">
+                                    <img src="./Tatto mid/grid_0 (18).png" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item" data-bs-interval="5000">
+                                    <img src="./Tatto mid/grid_0 (19).png" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item" data-bs-interval="5000">
+                                    <img src="./Tatto mid/grid_0 (20).png" class="d-block w-100" alt="...">
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="boxCarousel">
+                            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                <div class="carousel-item active" data-bs-interval="5000">
+                                    <img src="./Tatto mid/grid_0 (21).png" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item" data-bs-interval="5000">
+                                    <img src="./Tatto mid/grid_0 (22).png" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item" data-bs-interval="5000">
+                                    <img src="./Tatto mid/grid_0 (23).png" class="d-block w-100" alt="...">
+                                </div>
+                                </div>  
+                            </div>
+                        </div>
+                </div>
+            </section>
+                <footer class="footer">
+                    <div class="social">
+                    <a href="#"><i class="bi bi-instagram redeSocial"></i></a>
+                    <a href="#"><i class="bi bi-snapchat"></i></a>
+                    <a href="#"><i class="bi bi-twitter"></i></a>
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    </div>
+                        <ul class="list">
+                            <p>
+                                <a href="#">Home</a>
+                            </p>
+                            <p>
+                                <a href="#">Services</a>
+                            </p>
+                            <p>
+                                <a href="#">About</a>
+                            </p>
+
+                            <p>
+                                <a href="#">Terms</a>
+                            </p>
+
+                            <p>
+                                <a href="#">Privacy Popcy</a>
+                            </p>
+                        </ul>
+                        <ul class="copyright">
+                            <p class="copyright">Moyses Maciel V. Silva @ 2022</p>
+                        </ul>
+                </footer>
+                <script src="https://www.gstatic.com/firebasejs/9.15.0/firebase-app-compat.js"></script>
+                <script src="https://www.gstatic.com/firebasejs/9.15.0/firebase-auth-compat.js"></script>
+                <script src="https://www.gstatic.com/firebasejs/9.15.0/firebase-firestore-compat.js"></script>
+                <script src="https://www.gstatic.com/firebasejs/9.15.0/firebase-storage-compat.js"></script>
+                <script src="./initFirebase/firebase-init.js"></script>
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+                <script src="./databaseTatto.js"></script>
+                <script src="./carrinho/carrinhoDeCompra.js"></script>
+                <script src="./movimentação/scripts.js"></script>
+                <script src="./movimentação/colors.js"></script>
+                <script src="./index.js"></script>
+                <script src="./log/login.js"></script>
+                <script src="./register/cadastro.js"></script>
+                <script src="./shadow/shadowElement.js"></script>
+                
+<!-- JavaScript Bundle with Popper -->
+</body>
+</html>
